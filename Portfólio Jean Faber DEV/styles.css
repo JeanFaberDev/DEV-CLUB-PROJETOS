@@ -35,9 +35,15 @@ li {
     font-size: 25px;
     margin-right: 30px;
     cursor: pointer;
+    text-decoration: none;
 }
 
-li:hover {
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.link-menu:hover {
     color: #f9004d;
     transition: 0.5s;
 }
@@ -72,10 +78,18 @@ section {
     padding-left: 32%;
 }
 
-section img {
+.imagem-perfil {
     position: absolute;
     top: 214px;
     left: 5px;
+}
+
+.imagem-background {
+    position: absolute;
+    top: 127px;
+    right: 65px;
+    width: 30vw;
+    height: 64vh;
 }
 
 section div h2 {
