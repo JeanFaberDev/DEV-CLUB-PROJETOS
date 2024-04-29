@@ -94,6 +94,7 @@ video {
     color: white;
     font-size: 24px;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .header a:hover {
@@ -158,4 +159,49 @@ textarea {
     height: 100vh;
     background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
     transition: visibility 1s ease-in-out;
+}
+
+/* Media query
+max -> Valor menor que "X" px, aplica o css do MEDIA
+min -> Valor maior que "X" px, aplica o css do MEDIA
+
+*/ 
+
+@media(max-width: 1100px){
+    p {
+        display: none;
+    }
+
+    .caixa-mae {
+        flex-direction: column;
+        padding: 10px;
+        justify-content: flex-start;
+    }
+    
+    .caixa-principal {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .imagem-mario-luigi {
+        width: 80vw;
+        height: auto;
+    }
+
+    .header {
+        display: flex;
+        margin: 10px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .header img {
+        display: none;   
+    }
+
+    .header a {
+        font-size: 20px;
+    }
+
 }
