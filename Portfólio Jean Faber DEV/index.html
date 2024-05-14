@@ -8,12 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
     <title>Portfolio - Jean Faber Dev</title>
 </head>
 
 <body>
+    
     <div class="caixa-principal"> 
-        <nav>
+        <nav class="menu-desktop">
             <h2 class="portfolio"><span>Port</span>folio</h2>
             <ul>
                 <li><a class="link-menu" href="./index.html">Home</a></li>
@@ -23,6 +25,32 @@
                 <li><a class="link-menu" href="./contact.html" target="_blank">Contact Me</a></li>
             </ul>
         </nav>
+
+        <div class="botao-abrir-menu" id="botao-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+              </svg>
+        </div>
+
+        <div class="menu-mobile" id="menu-mobile">
+            <div class="botao-fechar">
+            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+              </svg>
+            </div>
+            <nav>
+                <ul>
+                    <li><a class="link-menu2" href="./index.html">Home</a></li>
+                    <li><a class="link-menu2" href="./about.html" target="_blank">About Me</a></li>
+                    <li><a class="link-menu2" href="./projects.html" target="_blank">Projects</a></li>
+                    <li><a class="link-menu2" href="./skills.html" target="_blank">Skills</a></li>
+                    <li><a class="link-menu2" href="./contact.html" target="_blank">Contact Me</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="overlay-menu" id="overlay-menu"></div>
+
+
         <div class="caixa-video">
             <video src="./img/Jean Faber Dev - SITE.mp4" autoplay muted loop></video>
             <div class="mascara"></div>
